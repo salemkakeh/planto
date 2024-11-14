@@ -1,0 +1,113 @@
+:root {
+  --main-color: #171f12;
+  --secund-color: #232a1e;
+  --text-color: #ffffffb5;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ /* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 575.98px) {
+  .container {
+    width: calc(575.98px - 30px);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) {
+  .container {
+    width: calc(767.98px - 30px);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+ /* Medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) {
+  .container {
+    width: calc(991.98px - 30px);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) {
+  .container {
+    width: calc(1199.98px - 30px);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/*  X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1399.98px) {
+  .container {
+    width: calc(1399.98px - 30px);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* 
+  XX-Large devices (larger desktops)
+  No media query since the xxl breakpoint has no upper bound on its width
+*/
+
+
+/* my button */
+.main-button {
+  padding: 10px 20px;
+  border: 2px solid var(--text-color);
+  border-radius: 15px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+
+
+/* section address h1 */
+
+section .container > .address-section {
+  color: #fff;
+  padding: 20px 30px; 
+  font-size: 40px;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+}
+
+section .container > .address-section::after,
+section .container > .address-section::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-width: 5px ;
+  border-style: solid;
+  border-color: green;
+  filter: drop-shadow(0 0 4px #0f0);
+}
+section .container > .address-section::before {
+  bottom: 0;
+  left: 0;
+  border-radius: 0  0  0 20px ;
+  border-top: none;
+  border-right: none;
+}
+
+section .container > .address-section::after {
+  right: 0;
+  top: 0;
+  border-radius: 0 20px 0 0 ;
+  border-bottom: none;
+  border-left: none;
+}
